@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf6ec;
+  --foreground: #3a2e27;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-pretendard);
 }
 
 body {
-  background: var(--background);
+  /* 크림색 → 연한 살구색 그라데이션 */
+  background:
+    radial-gradient(60rem 40rem at 10% -10%, #fffaf2 0%, transparent 60%),
+    radial-gradient(50rem 40rem at 110% 110%, #fbd9c4 0%, transparent 60%),
+    linear-gradient(160deg, #fdf6ec 0%, #fbe7d6 100%);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-pretendard), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
 }

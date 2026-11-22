@@ -14,12 +14,12 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "송프로",
-  bio: "세계 최고 바이브 코더",
-  imageUrl: "/profile-placeholder.svg",
+  name: "송개발",
+  bio: "풀스택 개발자 : 요즘에는 AI 개발에 관심이 많아요",
+  imageUrl: "/profile.jpg",
   links: [
-    { id: "github", title: "GitHub", url: "https://github.com" },
-    { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com" },
-    { id: "blog", title: "Blog", url: "https://example.com" },
+    { id: "github", title: "🐙 GitHub", url: "https://github.com/WonGeunS" },
+    { id: "blog", title: "✍️ Blog", url: "https://wg-cy.tistory.com/" },
+    { id: "email", title: "📧 Email", url: "mailto:dkrehdr@gmail.com" },
   ],
 };
